@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -20,11 +20,13 @@
   "author": "Mário Rodeghiero <mario.rodehiero@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.1.2",
     "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.2.1",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "mocha": "^3.5.3"
   }
 }
